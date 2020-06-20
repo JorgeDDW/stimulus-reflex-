@@ -14,13 +14,14 @@ class PostsReflex < ApplicationReflex
     end
 
     def like
-        like = Post.find(element.dataset[:id])
-        like.increment! :likes_count
+        post = Post.find(element.dataset[:id])
+        post.increment! :likes_count
         cable_ready["feed"].text_content(
             selector: "##{dom_id(post, "likes")}",
             text: post.likes_count
         )
         cable_ready.broadcast
     end
+
 
 end
