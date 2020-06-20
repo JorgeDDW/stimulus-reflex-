@@ -17,5 +17,8 @@ module Form
     # the framework and any gems in your application.
 
     config.active_job.queue_adapter = :sidekiq
+    config.generators.assets = false
+    config.generators.helper = false
+
   end
 end

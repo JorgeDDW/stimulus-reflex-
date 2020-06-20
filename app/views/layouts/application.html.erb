@@ -4,9 +4,16 @@
     <title>Form</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    
+    <%= action_cable_meta_tag %>
+    <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
