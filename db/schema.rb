@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_06_16_213110) do
   enable_extension "plpgsql"
 
   create_table "posts", force: :cascade do |t|
-    t.string "username", default: "Jorge Dominguez", null: false
+    t.string "username", default: "Some User", null: false
     t.string "body", null: false
     t.integer "likes_count", default: 0, null: false
     t.integer "repost_count", default: 0, null: false
