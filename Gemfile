@@ -54,6 +54,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "redis", "~> 4.2"
-gem "sidekiq", "~> 6.0"
+gem "sidekiq", "~> 6.2"
 gem "cable_ready", "~> 4.2"
 gem "stimulus_reflex", "~> 3.2"
